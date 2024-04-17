@@ -95,14 +95,29 @@ footer {
                         width: 50px;
                         margin: 0% 2%;
                         border: 1px solid set.$color6;
-                        transition: transform 0.8s ease;
+                        transition: background-color 0.8s ease, transform 0.8s ease;
 
                         &:hover {
-                            color: blue;
+                            color: set.$color3;
+                            background-color: set.$color4;
                             transform: scale(1.2);
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    footer {
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2, 1fr;
+            
+            .right-container h4 {
+                margin: 20%;
             }
         }
     }

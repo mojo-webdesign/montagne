@@ -83,3 +83,35 @@ section {
         }
     }
 }
+
+@media screen and (max-width: 1060px) {
+
+    section {
+        .second-container {
+        grid-template-columns:repeat(8, 1fr);
+        grid-template-rows: repeat(20,1fr);
+        grid-template-areas: 
+        ". . . d1 d1 . . ." 
+        ". . t1 t1 t1 t1 . ." 
+        ". i1 i1 i1 i1 i1 i1 ." 
+        ". i1 i1 i1 i1 i1 i1 ." 
+        ". i1 i1 i1 i1 i1 i1 ." 
+        ". i1 i1 i1 i1 i1 i1 ." 
+        ". p1 p1 p1 p1 p1 p1 ." 
+        ". p1 p1 p1 p1 p1 p1 ." 
+        ". . . b1 b1 . . ." 
+        ". . . b1 b1 . . ."
+        ". . . d2 d2 . . ."
+        ". . t2 t2 t2 t2  . ."
+        ". i2 i2 i2 i2 i2 i2 ."
+        ". i2 i2 i2 i2 i2 i2 ."
+        ". i2 i2 i2 i2 i2 i2 ."
+        ". i2 i2 i2 i2 i2 i2 ."
+        ". p2 p2 p2 p2 p2 p2 ."
+        ". p2 p2 p2 p2 p2 p2 ."
+        ". . . b2 b2 . . ."
+        ". . . b2 b2 . . ."; 
+        }
+    }
+}
+

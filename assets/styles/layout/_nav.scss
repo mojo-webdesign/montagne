@@ -12,8 +12,7 @@
         background-color: set.$color2;
         transform: translateY(-50%);
 
-        ul {
-            width: 45%;
+        .h-navbar{
             display: flex;
             
             li {
@@ -31,11 +30,10 @@
                 }
             }
         }
-
+         
         .logo-navbar {
             display: flex;
-            justify-content: end;
-            
+
             li {
                 list-style: none;
                 padding: 10px 30px;
@@ -48,7 +46,30 @@
                     transform: scale(1.2);
                 }
 
+            }     
+        }
+    }
+}
+
+@media screen and (max-width: 815px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        
+        .h-navbar {
+            li {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+        .logo-navbar {
+            display: none;
+
+            li {
+                display: none;
             }
         }
     }
 }
+
