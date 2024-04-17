@@ -1,0 +1,40 @@
+@use 'settings' as set;
+
+header {
+    @include set.flexColumn;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
+    overflow: hidden;
+    
+    h1 {
+        font-family: set.$font1 ;
+        font-size: 6rem;
+        color: set.$color3;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+
+    p {
+        font-family: set.$font2;
+        font-style: italic;
+        font-size: 2rem;
+        color: set.$color3;
+        padding: 10px;
+    }
+
+    .fleche {
+        border-radius: 100%;
+        background-color: transparent;
+        border: solid 1px set.$color3;
+        height: 60px;
+        width: 60px;
+        margin: 60px 0;
+
+        i {
+            font-size: 20px;
+            color: set.$color3;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@use "settings" as set;
+
+.nav-container {
+    @include set.flexCentre;
+    height: 0px;
+    
+    nav {
+        width: 73%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: set.$color2;
+        transform: translateY(-50%);
+
+        ul {
+            width: 45%;
+            display: flex;
+            
+            li {
+                font-family: set.$font1;
+                color: set.$color1;
+                letter-spacing: 3px;
+                text-align: center;
+                list-style: none;
+                padding: 30px 10px;
+                transition: background-color 0.8s ease;
+
+                &:hover {
+                    color: set.$color4;
+                    background-color: set.$color1;
+                }
+            }
+        }
+
+        .logo-navbar {
+            display: flex;
+            justify-content: end;
+            
+            li {
+                list-style: none;
+                padding: 10px 30px;
+                font-size: 20px;
+                transition: transform 0.6s ease;
+
+                &:hover {
+                    color: set.$color4;
+                    background-color: transparent;
+                    transform: scale(1.2);
+                }
+
+            }
+        }
+    }
+}
